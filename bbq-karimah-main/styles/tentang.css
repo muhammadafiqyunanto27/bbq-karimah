@@ -1,0 +1,183 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: var(--warna-dua);
+  padding: 40px 25px 40px 25px;
+}
+
+.tentang {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  text-align: center;
+  gap: 30px;
+  background-color: rgba(216, 206, 206, 0.985);
+}
+
+.vmt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.visi{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.visi > h2 {
+  font-size: 40px;
+}
+
+.detail-visi,
+.tujuan,
+.langkah {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.detail-visi > h2,
+.tujuan > h2,
+.langkah > h2 {
+  font-size: 30px;
+}
+
+.detail-visi > ol,
+.tujuan > ul,
+.langkah > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.detail-visi > ol > li,
+.tujuan > ul > li,
+.langkah > ul > li {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 25px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.detail-visi > ol > li > h3,
+.tujuan > ul > li > h3,
+.langkah > ul > li > h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+p > img {
+  position: relative;
+  top: 26px;
+  right: 10px;
+}
+
+li > img {
+  position: relative;
+  top: 29px;
+  right: 10px;
+}
+
+p > span,
+li > span {
+  display: flex;
+  margin-left: 20px;
+}
+
+.misi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.misi > h2 {
+  font-size: 40px;
+}
+
+.misi ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.misi > ul > li {
+  background-color: rgb(182, 255, 255);
+  padding: 0px 25px 25px 25px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.misi > ul > li > span:nth-child(2) {
+  font-weight: 800;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+@media (min-width:768px) {
+    .misi > ul > li {
+        background-color: rgb(182, 255, 255);
+        padding: 0px 25px 25px 25px;
+        border-radius: 10px;
+        width: 40%;
+      }
+
+      .detail-visi > ol ,
+      .tujuan > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;;
+      }
+
+      .detail-visi > ol > li ,
+      .tujuan > ul > li
+     {
+        width: 49%;
+      }
+
+      .langkah > ul > li {
+        width: 46%;
+      }
+
+      .langkah {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .langkah > ul  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+}

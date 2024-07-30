@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/kontak.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Tentang</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="nav" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="navbar">
+                    <a href="./index.html">Logo</a>
+                    <div class="menu">
+                        <a href="./index.html">Beranda</a>
+                        <a href="./tentang.html">Tentang</a>
+                        <a href="./keunggulan.html">Keunggulan</a>
+                        <a href="./kontak.html">Kontak</a>
+                    </div>
+                    <h1 onclick="toggleSidebar()" id="toggle-btn" style="transition: all .3s ease;">&#9776</h1>
+                </div>
+
+            </div>
+
+            <div class="hero" data-aos="zoom-in" id="content" style="padding: 150px 20px;">
+                <div id="sidebar">
+                    <a href="./index.html">Beranda</a>
+                    <a href="./tentang.html">Tentang</a>
+                    <a href="./keunggulan.html">Keunggulan</a>
+                    <a href="./kontak.html">Kontak</a>
+                </div>
+                <h1>KONTAK</h1>
+            </div>
+        </div>
+
+        <div class="section-1">
+
+
+            <div class="container">
+                <div class="location"   data-aos="zoom-in-up" data-aos-duration="1000">
+                    <a href="https://maps.app.goo.gl/n3J4J2i4GNFurwzz7" target="_blank">Lokasi Kami</a>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.376879841554!2d110.75908037456946!3d-7.5338094924794285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a147e46eda873%3A0xd2f585378cd3f5e3!2sPPQ%20AL-MAHIR!5e0!3m2!1sid!2sid!4v1722223362529!5m2!1sid!2sid"
+                        width="350 height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;"></iframe>
+                    <p> Jl. Adi Sumarmo No.200, Krobyongan, Gawanan, Kec. Colomadu, Kabupaten Karanganyar, Jawa Tengah
+                        57175</p>
+                </div>
+
+                
+
+                <div class="sosmed"   data-aos="zoom-in-up" data-aos-duration="1000">
+                    
+                    <a href=""><i><img src="./assets/mail-line.svg" alt=""></i> bbqkarimah@gmail.com</a>
+                    <a href=""><i><img src="./assets/whatsapp-line.svg" alt=""></i> bbqkarimah@gmail.com</a>
+                    <a href=""><i><img src="./assets/instagram-line.svg" alt=""></i> bbqkarimah@gmail.com</a>
+                    <a href=""><i><img src="./assets/global-line.svg" alt=""></i> bbqkarimah@gmail.com</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="section-2">
+            <div class="container"   data-aos="zoom-in-up" data-aos-duration="1000">
+                <h2>Form Kontak</h2>
+                <form action="">
+                    <div class="input-text">
+                        <input type="text" placeholder="Nama" class="name">
+                        <input type="text" placeholder="Subjek" class="subjek">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Pesan" class="pesan"></textarea>
+                        <input type="text" placeholder="Email" class="email">
+                        <input type="text" placeholder="No Telpon" class="telpon">
+                    </div>
+                    <button>Kirim</button>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+
+            <div class="copy">
+                © 2024 Muhammad Afiq Yunanto. All right reserved
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script>
+        AOS.init();
+
+        const sidebar = document.getElementById("sidebar")
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar")
+            const content = document.getElementById("content")
+
+            if (sidebar.style.width === "0px") {
+                sidebar.style.width = "250px"
+                sidebar.style.display = "flex"
+                sidebar.style.flexDirection = "column"
+                sidebar.style.transition = "3s"
+
+            } else {
+                sidebar.style.width = "0px"
+                sidebar.style.display = "none"
+                sidebar.style.transition = "3s"
+            }
+
+
+        }
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        document.querySelector('.next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlides();
+        });
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlides();
+        });
+
+        function updateSlides() {
+            const offset = -currentIndex * 100;
+            document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+        }
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (currentScrollPos) {
+                sidebar.style.width = "0px"
+                sidebar.style.display = "none"
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+        var acc = document.getElementsByClassName("pertanyaan");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+
+.section-1 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.apa-itu {
+  background-color: var(--warna-dua);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.section-2 > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.section-2 .container > h2 {
+  text-align: center;
+}
+
+.produk {
+  background-color: var(--warna-dua);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.wrap-card-produk {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-produk {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #8fd2b6;
+  border-radius: 10px;
+}
+
+.card-produk:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.7s;
+}
+
+.tahsin {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.tahsin > .teks-p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4px;
+}
+
+.tahsin > img {
+  width: 70%;
+}
+
+.mushaf .image > img {
+  width: 40%;
+}
+
+.mushaf {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mushaf > h4 {
+  text-align: center;
+}
+
+.mushaf .image {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.keunggulan {
+  background-color: #c9e6da;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.wrap-card-keunggulan {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-keunggulan {
+  background-color: #8ddab9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card-keunggulan:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.5s;
+}
+
+.nilai {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.p-n {
+  text-align: center;
+}
+
+.wrap-card-nilai {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #c9e6da;
+  padding: 30px 20px;
+}
+
+.card-nilai {
+  background-color: #8ddab9;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-nilai:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.5s;
+}
+
+.section-4 .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-4 > .container > h2 {
+  text-align: center;
+}
+
+.wrap-disc {
+  background-color: #c9e6da;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.card-disc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #91d0b7;
+  padding: 30px 20px 50px 20px;
+  border-radius: 10px;
+}
+
+.card-disc:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.5s;
+}
+
+.poto-disc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.poto-disc > img {
+  width: 70%;
+}
+
+.harga {
+  display: flex;
+}
+
+.harga > h3 {
+  position: relative;
+  font-size: 30px;
+  top: 20px;
+  right: 10px;
+}
+
+.wrap-referral {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #c2ebda;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.referral {
+  width: 100%;
+  background-color: #8ddab9;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wrap-photo > img {
+  width: 100%;
+}
+
+.paket {
+  width: 100%;
+  background-color: #8ddab9;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.pt-paket > img {
+  width: 100%;
+}
+
+
+
+@media (min-width: 768px) {
+
+  .apa-itu {
+    width: 70%;
+  }
+
+  .p > h2 {
+    font-size: 40px;
+  }
+
+  .pk > h2 {
+    font-size: 40px;
+  }
+
+  .card-produk {
+    width: 32%;
+    gap: 20px;
+    padding: 30px 10px;
+  }
+
+  .card-produk > h3 , .card-produk > img > h3 {
+    font-size: 30px;
+  }
+
+  .teks-p {
+    width: 70%;
+  }
+
+  .mushaf .image > p {
+    width: 46%;
+  }
+
+  .mushaf .image > img {
+    height: 100%;
+    width: 46%;
+  }
+
+  .wrap-card-keunggulan {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-keunggulan {
+    width: 48%;
+  }
+
+  .nilai {
+    background-color: #c9e6da;
+    padding: 30px;
+  }
+
+  .wrap-card-nilai {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-nilai {
+    width: 48%;
+    height: 150px;
+  }
+
+  .wrap-disc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .harga > h3 {
+    font-size: 40px;
+  }
+
+  .card-disc {
+    width: 30%;
+  }
+
+  .harga > h3 {
+    font-size: 30px;
+  }
+
+  .section-4 .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .referral {
+    width: 48%;
+    background-color: #8ddab9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .wrap-photo > img {
+    width: 100%;
+  }
+  
+  .paket {
+    width: 48%;
+    background-color: #8ddab9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+
+  .wrap-paket {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pt-paket > img {
+    width: 100%;
+  }
+
+  .harga-paket {
+    padding-top: 20px;
+  }
+
+  .harga-paket > h3 {
+    font-size: 30px;
+  }
+  
+  
+
+}
